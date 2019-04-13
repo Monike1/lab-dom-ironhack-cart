@@ -5,10 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
+  <link rel="stylesheet" href="css/style.css">
   <title>Ironhack cart</title>
+  <script type="text/javascript" src="js/index.js" async></script>
 </head>
 <body>
+<main id="main-container">
+  <h1>Ironhack Merchandising Shop</h1>
+  <div class="cart-products">
+    <div class="product-row">
+      <span class="product-name flex-item">IronBubble-head</span>
+      <span class="price-per-item flex-item">$25.99</span>
+      <div class="cart-quantity flex-item">
+        <label for="quantity-input">QTY</label>
+        <input type="number" class="quantity-input" id="quantity-input" value="0">
+      </div>
+      <span class="total-for-product flex-item">$0.00</span>
+      <button class="btn btn-delete" type="button">Delete</button>
+    </div>
+    <div class="product-row">
+      <span class="product-name flex-item">IronShirt</span>
+      <span class="price-per-item flex-item">$15.00</span>
+      <div class="cart-quantity flex-item">
+        <label for="quantity-input">QTY</label>
+        <input type="number" class="quantity-input" id="quantity-input" value="0">
+      </div>
+      <span class="total-for-product flex-item">$0.00</span>
+      <button class="btn btn-delete" type="button">Delete</button>
+    </div>
+  </div>
+  <div class="create-new-item">
+      <div class="create-name flex-item">
+        <!-- <label for="name-new-item">Item</label> -->
+        <input type="text" id="name-new-item" value="" placeholder="Item name here">
+      </div>
+      <div class="create-price flex-item">
+        <!-- <label for="price-new-item">Price</label> -->
+        <input type="text" id="price-new-item" value="" placeholder="$0.00">
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <button class="btn btn-create" type="button">Create</button>
+    </div>
+  <div class="cart-total">
+    <h2 class="cart-total-title">Total Price: 
+    <span class="cart-total-price">$0.00</span>
+    </h2>
+  </div>
+  <div class="order-wrapper">
+    <button class="btn btn-success" id="order-button">Order</button>
+  </div>
+</main>
+
+
 </body>
 </html>
